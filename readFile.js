@@ -2,8 +2,9 @@ const fs = require("fs");
 const { parse } = require("json2csv");
 
 // 同步读取上级目录下的所有文件到files中
+
 const files = fs.readdirSync(
-  "/Volumes/移动硬盘/东明数据/3.正射影像/8.正射影像"
+  "/Users/admin/工作/项目/东明博物馆/东明数据/缩略图"
 );
 var data = [];
 
