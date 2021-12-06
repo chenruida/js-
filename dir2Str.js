@@ -24,7 +24,13 @@ const getFiles = (filePath) => {
         }
         if (stat.isFile()) {
           //该路径的东西是文件？
-          files.push(fPath);
+          let strArr = item.split("/");
+          var obj = {
+            collectionCode: [],
+            code: [],
+            name: [],
+          };
+          files.push(obj);
         }
       }
     });
